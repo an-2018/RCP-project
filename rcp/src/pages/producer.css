@@ -27,7 +27,19 @@ width: 100%;
     border-radius: 10px;
     color: white;
     margin-top: 1em;
-    margin-left: 5.5em;
+    margin-bottom: 1em;
+    margin-left: 20%;
+}
+.submit-button-con{
+    background: linear-gradient(90deg, rgba(63,251,66,1) 15%, rgba(64,150,65,1) 72%);
+    padding: 1em;
+    width: 12em;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 20%;
 }
 .producerCONForm{
     display: flex;
@@ -64,24 +76,22 @@ width: 100%;
     margin-top: 0.5em;
     text-align: center;
 }
-.consumerMonitors{
+
+.monitors{
     display: flex;
     justify-content: space-between;
 }
-.producerMonitors{
-    display: flex;
-    justify-content: space-between;
-}
-.producerMonitor{
+.monitor{
     width: 32%;
 }
-.consumerMonitor{
-width: 46%;
-}
+
 .tableHeaders{
     color: white;
 }
 .submit-button:hover{
+    opacity: 0.8;
+}
+.submit-button-con:hover{
     opacity: 0.8;
 }
 @media only screen and (max-width: 1400px) {
@@ -92,11 +102,11 @@ width: 46%;
         display: block;
        
     }
-    .producerMonitors{
+    .monitors{
         display: block;
         
     }
-    .producerMonitor{
+    .monitor{
         width: 100%;
     }
     .consumerMonitor{
@@ -105,52 +115,78 @@ width: 46%;
   }
   @media only screen and (max-width: 800px) {
     .producerCONPage{
-        height: 130vh;
+        height: 150vh;
     }
-    .consumerMonitors{
-        display: block;
-       
-    }
-    .producerMonitors{
+   
+    .monitors{
         display: block;
         
     }
-    .producerMonitor{
+    .monitor{
         width: 100%;
     }
-    .consumerMonitor{
-    width: 100%;
-    }
+  
   }
 
 @media only screen and (max-width: 750px) {
     .producerCONPage{
-        height: 190vh;
+        height: 210vh;
+        justify-content: space-between;
     }
-    .consumerMonitors{
+  
+    .form-con{
+        margin-left: 23%;
+    }
+    .form-pro{
+        margin-left: 23%;
+    }
+    .monitors{
         display: block;
-       
+        margin-left: 30%;
     }
-    .producerMonitors{
-        display: block;
-        
-    }
-    .producerMonitor{
+    .monitor{
         width: 100%;
     }
-    .consumerMonitor{
-    width: 100%;
+ 
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+ 
+  
+    .form-con{
+        margin-left: 10%;
+    }
+    .form-pro{
+        margin-left: 5%;
+    }
+    .monitors{
+        margin-left: 20%;
+    }
+  
+    
+  }
+  @media only screen and (max-width: 450px) {
+    .producerCONPage{
+        height: 300vh;
+    }
+  
+    .form-con{
+        margin-left: 10%;
+    }
+    .form-pro{
+        margin-left: 5%;
+    }
+    .monitors{
+        margin-left: 10%;
+    }
+    .submit-button-con{
+      
+        margin-left: 10%;
+    }
+    .submit-button{
+        margin-left: 10%;
     }
   }
 
-@media only screen and (max-width: 600px){
-    .producerCONPage{
-        background-color: rgb(61, 117, 61);
-        height: 100%;
-        display: flex;
-        padding: 2em;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-    }   
-}
+
